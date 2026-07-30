@@ -1,0 +1,59 @@
+:root{
+    --primary:#002147;
+    --secondary:#F16511;
+    --success:#28a745;
+    --danger:#dc3545;
+    --white:#ffffff;
+    --gray:#f5f5f5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI,Arial,sans-serif;
+    background:linear-gradient(135deg,#002147,#1b3d6d,#F16511);
+    min-height:100vh;
+    color:#fff;
+}
+
+.container{
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(14px);
+    border-radius:14px;
+    padding:30px;
+    box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
+
+.btn{
+    cursor:pointer;
+    border:none;
+    border-radius:8px;
+    padding:12px 20px;
+    background:var(--secondary);
+    color:white;
+    font-weight:600;
+}
+
+.btn:hover{
+    opacity:.92;
+}
+
+.form-control{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.08);
+    color:white;
+}
