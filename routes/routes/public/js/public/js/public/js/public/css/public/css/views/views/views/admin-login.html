@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Admin Login</title>
+
+<link rel="stylesheet"
+href="/css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Administrator Login</h2>
+
+<input
+id="email"
+class="form-control"
+placeholder="Email">
+
+<br><br>
+
+<input
+type="password"
+id="password"
+class="form-control"
+placeholder="Password">
+
+<br><br>
+
+<button
+class="btn"
+id="loginBtn">
+
+Login
+
+</button>
+
+</div>
+
+</div>
+
+<script type="module">
+
+import API from "/js/api.js";
+
+document
+.getElementById("loginBtn")
+.onclick=async()=>{
+
+const r=await API.login(
+
+email.value,
+password.value
+
+);
+
+if(r.success){
+
+localStorage.setItem(
+"token",
+r.token
+);
+
+location="/dashboard";
+
+}else{
+
+alert(r.message);
+
+}
+
+};
+
+</script>
+
+</body>
+</html>
