@@ -1,0 +1,37 @@
+CREATE TABLE admins(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+name VARCHAR(100),
+
+email VARCHAR(100) UNIQUE,
+
+password VARCHAR(255),
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
+
+CREATE TABLE students(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+student_id VARCHAR(30) UNIQUE,
+
+full_name VARCHAR(150),
+
+program VARCHAR(150),
+
+department VARCHAR(150),
+
+cgpa DECIMAL(3,2),
+
+passing_year YEAR,
+
+date_of_birth DATE,
+
+issue_date DATE,
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
