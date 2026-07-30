@@ -1,0 +1,41 @@
+.sidebar{
+    width:250px;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    background:#00172f;
+}
+
+.sidebar h2{
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+.sidebar a{
+    display:block;
+    color:#ddd;
+    text-decoration:none;
+    padding:14px 20px;
+}
+
+.sidebar a:hover{
+    background:#F16511;
+}
+
+.main{
+    margin-left:250px;
+    padding:30px;
+}
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table th,
+.table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
