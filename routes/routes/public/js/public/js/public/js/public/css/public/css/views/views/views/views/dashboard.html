@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/admin.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>CIU Portal</h2>
+
+<a href="/">Verification</a>
+
+<a href="/dashboard">Dashboard</a>
+
+<a href="/add-student">Add Student</a>
+
+<a href="#" id="logoutBtn">Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>Student Management</h1>
+
+<table class="table">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Program</th>
+
+<th>Department</th>
+
+<th>CGPA</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="studentTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script type="module" src="/js/admin.js"></script>
+
+</body>
+</html>
